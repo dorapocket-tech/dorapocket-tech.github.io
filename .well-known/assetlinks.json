@@ -1,0 +1,18 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.goexercise.fitness.timer",
+      "sha256_cert_fingerprints": ["25:D0:4C:4D:B7:D5:D2:D5:E8:DE:19:7B:70:22:46:08:DA:A7:1E:38:CF:A4:AF:C5:29:CD:98:32:FB:CD:4B:7C"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.goexercise.fitness.timer.dev",
+      "sha256_cert_fingerprints": ["25:D0:4C:4D:B7:D5:D2:D5:E8:DE:19:7B:70:22:46:08:DA:A7:1E:38:CF:A4:AF:C5:29:CD:98:32:FB:CD:4B:7C"]
+    }
+  }
+] 

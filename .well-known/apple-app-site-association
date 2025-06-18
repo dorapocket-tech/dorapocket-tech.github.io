@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Q2236BV47L.com.goexercise.fitness.timer",
+        "paths": ["/workout/*"]
+      },
+      {
+        "appID": "Q2236BV47L.com.goexercise.fitness.timer.dev",
+        "paths": ["/workout/*"]
+      }
+    ]
+  }
+} 
