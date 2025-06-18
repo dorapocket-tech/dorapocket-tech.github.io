@@ -4,11 +4,15 @@
     "details": [
       {
         "appID": "Q2236BV47L.com.goexercise.fitness.timer",
-        "paths": ["/workout/*"]
+        "paths": ["/*"]
+      },
+      {
+        "appID": "Q2236BV47L.com.goexercise.fitness.timer.preview",
+        "paths": ["/*"]
       },
       {
         "appID": "Q2236BV47L.com.goexercise.fitness.timer.dev",
-        "paths": ["/workout/*"]
+        "paths": ["/*"]
       }
     ]
   }
