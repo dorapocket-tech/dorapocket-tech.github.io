@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Exercise Timer Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #f43f5e;
+            border-bottom: 2px solid #f43f5e;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #374151;
+            margin-top: 30px;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            border-left: 4px solid #f43f5e;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #4b5563;
+        }
+        .contact-info {
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Go Exercise Timer Support</h1>
+
+    <div class="contact-info">
+        <h2>📧 Contact Us</h2>
+        <p><strong>Email:</strong> dorapocket.nz@gmail.com</p>
+        <p>We typically respond within 24 hours. Please include your device model and iOS/Android version when reporting issues.</p>
+    </div>
+
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">Q1: Why aren't notifications working in the background?</div>
+        <div class="faq-answer">
+            <p>Background notifications require proper permissions. Please check:</p>
+            <ul>
+                <li><strong>iOS:</strong> Go to Settings → Notifications → Go Exercise Timer and ensure "Allow Notifications" is enabled</li>
+                <li><strong>Android:</strong> Go to Settings → Apps → Go Exercise Timer → Notifications and enable all notification categories</li>
+                <li>Make sure Do Not Disturb mode is not enabled</li>
+                <li>Ensure the app has permission to run in the background</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q2: Can I use the timer while watching videos?</div>
+        <div class="faq-answer">
+            Yes! That's exactly what Go Exercise Timer is designed for. Start your workout, switch to your video app (YouTube, Netflix, etc.), and we'll notify you when it's time to change exercises or take a rest.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q3: How do I create a custom workout?</div>
+        <div class="faq-answer">
+            <p>There are two ways to create workouts:</p>
+            <ul>
+                <li><strong>From scratch:</strong> Tap the <span class="highlight">+ button at the bottom right</span> of the workouts screen, then add your exercises with custom durations and rest periods</li>
+                <li><strong>Copy existing:</strong> Swipe left on any existing workout and tap "Copy", then edit the copied workout to customize it</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q4: How do I edit existing workouts?</div>
+        <div class="faq-answer">
+            <span class="highlight">Swipe left</span> on any workout in your list and tap the "Edit" button to modify exercises, durations, or add new steps.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q5: What's the difference between a Set and an Exercise?</div>
+        <div class="faq-answer">
+            <ul>
+                <li><strong>Exercise:</strong> A single movement or activity (e.g., "Push-ups", "Plank Hold")</li>
+                <li><strong>Set:</strong> A group of exercises that repeat together as a unit (e.g., "Upper Body Circuit" containing Push-ups, Plank, and Mountain Climbers that repeat 3 times)</li>
+            </ul>
+            <p>Sets are useful for organizing related exercises and repeating entire circuits multiple times.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q6: What's the difference between Timed and Self-Paced exercises?</div>
+        <div class="faq-answer">
+            <ul>
+                <li><strong>Timed Exercise:</strong> Runs for a specific duration (e.g., "30-second Plank Hold"). The timer counts down and automatically moves to the next step</li>
+                <li><strong>Self-Paced Exercise:</strong> You control when it ends (e.g., "Push-ups (10-15 reps)"). Tap the screen when you're finished to move to the next step</li>
+            </ul>
+            <p>Self-paced exercises are perfect for strength training where you want to complete a specific number of repetitions at your own pace.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q7: How do I reorder workouts, exercises, or sets?</div>
+        <div class="faq-answer">
+            <p><span class="highlight">Swipe right</span> on any item to reveal the reorder controls:</p>
+            <ul>
+                <li>Use the <strong>up/down arrow buttons</strong> to move items in your preferred order</li>
+                <li>This works for workouts in your main list, exercises within a workout, and exercises within a set</li>
+                <li>Changes are saved automatically</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q8: Can I use this for Tabata or HIIT workouts?</div>
+        <div class="faq-answer">
+            Absolutely! Go Exercise Timer is perfect for:
+            <ul>
+                <li><strong>Tabata:</strong> Set 20-second exercises with 10-second rest periods</li>
+                <li><strong>HIIT:</strong> Create any work/rest interval combination</li>
+                <li><strong>EMOM:</strong> Use 60-second intervals with self-paced exercises</li>
+                <li><strong>Circuit Training:</strong> Group exercises into sets with custom timing</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q9: Why do I need a subscription?</div>
+        <div class="faq-answer">
+            The subscription helps us maintain and improve the app. Premium features include unlimited custom workouts, advanced timer features, and priority support. We offer monthly, yearly, and lifetime options to fit your needs.
+        </div>
+    </div>
+
+    <h2>📋 Quick Tips</h2>
+    <div class="faq-item">
+        <div class="faq-answer">
+            <ul>
+                <li><strong>Background Use:</strong> Start your workout, then switch to other apps - notifications will keep you on track</li>
+                <li><strong>Volume Controls:</strong> Use your device's volume buttons during workouts to quickly adjust notification sounds</li>
+                <li><strong>Screen Lock:</strong> The timer continues running even when your screen is locked</li>
+                <li><strong>Pause/Resume:</strong> Tap the pause button if you need to take an unexpected break</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>🔗 Legal</h2>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+
+    <div class="contact-info">
+        <p><strong>Still need help?</strong> Contact us at dorapocket.nz@gmail.com and we'll get back to you as soon as possible!</p>
+    </div>
+</body>
+</html>
