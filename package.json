@@ -1,0 +1,17 @@
+{
+  "name": "myfitnesstimer-links",
+  "version": "1.0.0",
+  "description": "GitHub Pages site for MyFitnessTimer legal content and support",
+  "scripts": {
+    "build-legal": "node scripts/build-legal.js",
+    "sync-submodule": "git submodule update --remote",
+    "build": "npm run sync-submodule && npm run build-legal",
+    "dev": "npm run build && python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shujin-jim-li/MyFitnessTimerLinks.git"
+  },
+  "author": "Dorapocket Tech",
+  "license": "MIT"
+}
