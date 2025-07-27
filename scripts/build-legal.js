@@ -5,8 +5,8 @@ const path = require('path');
 const legalContentPath = path.join(__dirname, '../app-source/constants/legal-content.ts');
 
 if (!fs.existsSync(legalContentPath)) {
-  console.error('Legal content file not found. Make sure the submodule is initialized.');
-  process.exit(1);
+    console.error('Legal content file not found. Make sure the submodule is initialized.');
+    process.exit(1);
 }
 
 const legalContent = fs.readFileSync(legalContentPath, 'utf8');
@@ -16,8 +16,8 @@ const privacyMatch = legalContent.match(/PRIVACY_POLICY_CONTENT = `([\s\S]*?)`;/
 const termsMatch = legalContent.match(/TERMS_OF_SERVICE_CONTENT = `([\s\S]*?)`;/);
 
 if (!privacyMatch || !termsMatch) {
-  console.error('Could not extract legal content from the file.');
-  process.exit(1);
+    console.error('Could not extract legal content from the file.');
+    process.exit(1);
 }
 
 const privacyContent = privacyMatch[1];
@@ -25,35 +25,35 @@ const termsContent = termsMatch[1];
 
 // Convert markdown-style content to HTML
 function convertToHTML(content) {
-  return content
-    // Convert **bold** to <strong>
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    // Convert bullet points to list items
-    .replace(/^• (.*$)/gm, '<li>$1</li>')
-    // Group consecutive list items into <ul> tags
-    .replace(/(<li>.*<\/li>\s*)+/gs, (match) => `<ul>\n${match}</ul>\n`)
-    // Convert double newlines to paragraph breaks
-    .replace(/\n\n/g, '</p>\n<p>')
-    // Wrap everything in paragraphs
-    .replace(/^(.*)$/gm, (line) => {
-      if (line.startsWith('<ul>') || line.startsWith('</ul>') || 
-          line.startsWith('<li>') || line.startsWith('</li>') ||
-          line.startsWith('<p>') || line.startsWith('</p>') ||
-          line.trim() === '') {
-        return line;
-      }
-      return `<p>${line}</p>`;
-    })
-    // Clean up empty paragraphs and fix formatting
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p>(<ul>)/g, '$1')
-    .replace(/(<\/ul>)<\/p>/g, '$1')
-    .replace(/\n\s*\n/g, '\n');
+    return content
+        // Convert **bold** to <strong>
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        // Convert bullet points to list items
+        .replace(/^• (.*$)/gm, '<li>$1</li>')
+        // Group consecutive list items into <ul> tags
+        .replace(/(<li>.*<\/li>\s*)+/gs, (match) => `<ul>\n${match}</ul>\n`)
+        // Convert double newlines to paragraph breaks
+        .replace(/\n\n/g, '</p>\n<p>')
+        // Wrap everything in paragraphs
+        .replace(/^(.*)$/gm, (line) => {
+            if (line.startsWith('<ul>') || line.startsWith('</ul>') ||
+                line.startsWith('<li>') || line.startsWith('</li>') ||
+                line.startsWith('<p>') || line.startsWith('</p>') ||
+                line.trim() === '') {
+                return line;
+            }
+            return `<p>${line}</p>`;
+        })
+        // Clean up empty paragraphs and fix formatting
+        .replace(/<p><\/p>/g, '')
+        .replace(/<p>(<ul>)/g, '$1')
+        .replace(/(<\/ul>)<\/p>/g, '$1')
+        .replace(/\n\s*\n/g, '\n');
 }
 
 // Generate HTML template
 function generateHTML(title, content) {
-  return `<!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -174,5 +174,5 @@ console.log('   - privacy.html');
 console.log('   - terms.html');
 console.log('');
 console.log('🔗 URLs for App Store submission:');
-console.log('   Privacy Policy: https://shujin-jim-li.github.io/MyFitnessTimerLinks/privacy.html');
-console.log('   Terms of Service: https://shujin-jim-li.github.io/MyFitnessTimerLinks/terms.html');
+console.log('   Privacy Policy: https://dorapocket-tech.github.io/MyFitnessTimerLinks/privacy.html');
+console.log('   Terms of Service: https://dorapocket-tech.github.io/MyFitnessTimerLinks/terms.html');

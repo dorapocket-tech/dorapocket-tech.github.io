@@ -4,9 +4,9 @@ GitHub Pages site for MyFitnessTimer app legal content and support documentation
 
 ## 🔗 Live URLs
 
-- **Support Page**: https://shujin-jim-li.github.io/MyFitnessTimerLinks/support.html
-- **Privacy Policy**: https://shujin-jim-li.github.io/MyFitnessTimerLinks/privacy.html
-- **Terms of Service**: https://shujin-jim-li.github.io/MyFitnessTimerLinks/terms.html
+- **Support Page**: https://dorapocket-tech.github.io/MyFitnessTimerLinks/support.html
+- **Privacy Policy**: https://dorapocket-tech.github.io/MyFitnessTimerLinks/privacy.html
+- **Terms of Service**: https://dorapocket-tech.github.io/MyFitnessTimerLinks/terms.html
 
 ## 🏗️ Build System
 
@@ -16,7 +16,7 @@ This repository uses a Git submodule to automatically sync legal content from th
 
 The submodule is already configured and points to:
 ```
-app-source -> https://github.com/shujin-jim-li/MyFitnessTimer.git
+app-source -> https://github.com/dorapocket-tech/MyFitnessTimer.git
 ```
 
 ### Building Legal Content
@@ -67,9 +67,9 @@ npm run dev
 
 Use these URLs in your App Store submission:
 
-- **Privacy Policy URL**: `https://shujin-jim-li.github.io/MyFitnessTimerLinks/privacy.html`
-- **Terms of Service URL**: `https://shujin-jim-li.github.io/MyFitnessTimerLinks/terms.html`
-- **Support URL**: `https://shujin-jim-li.github.io/MyFitnessTimerLinks/support.html`
+- **Privacy Policy URL**: `https://dorapocket-tech.github.io/MyFitnessTimerLinks/privacy.html`
+- **Terms of Service URL**: `https://dorapocket-tech.github.io/MyFitnessTimerLinks/terms.html`
+- **Support URL**: `https://dorapocket-tech.github.io/MyFitnessTimerLinks/support.html`
 
 ## 📝 Manual Updates
 
