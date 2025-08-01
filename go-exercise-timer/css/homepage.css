@@ -1,0 +1,37 @@
+/* Homepage-specific styles for Go Exercise Timer */
+
+/* Override base body styles for homepage */
+body {
+    text-align: center;
+}
+
+/* Homepage header styling */
+.header {
+    margin-bottom: 40px;
+    border-bottom: none;
+}
+
+/* Homepage title styling */
+h1 {
+    color: #111827;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Homepage subtitle */
+.subtitle {
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments for homepage */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+}

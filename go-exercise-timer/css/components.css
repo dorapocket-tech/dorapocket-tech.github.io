@@ -1,0 +1,83 @@
+/* Component styles for Go Exercise Timer application */
+
+/* Header components */
+.header {
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.last-updated {
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Button and link components */
+.support-link {
+    margin-top: 30px;
+}
+
+.support-link a {
+    color: #007AFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #007AFF;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.support-link a:hover {
+    background-color: #007AFF;
+    color: white;
+}
+
+/* FAQ components */
+.faq-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border-left: 4px solid #f43f5e;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    color: #4b5563;
+}
+
+/* Contact and info components */
+.contact-info {
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Highlight component */
+.highlight {
+    background-color: #fef3c7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Special heading styles */
+h1.page-title {
+    color: #f43f5e;
+    border-bottom: 2px solid #f43f5e;
+    padding-bottom: 10px;
+}
+
+h2.section-title {
+    color: #374151;
+    margin-top: 30px;
+}
