@@ -40,7 +40,7 @@
         <article class="legal-content">
           <p class="eyebrow">Privacy policy</p>
           <h1 class="page-title">Taller Buddy Privacy Policy</h1>
-          <div class="last-updated">Last updated: April 7, 2026</div>
+          <div class="last-updated">Last updated: April 19, 2026</div>
 
           <section>
             <h2>1. Introduction</h2>
@@ -68,11 +68,23 @@
 
             <h3>2.2 Automatically collected information</h3>
             <ul>
-              <li>Device information such as device type and operating system version</li>
-              <li>App usage analytics such as features used and session duration</li>
-              <li>Crash reports and performance data</li>
+              <li>Device information such as device type, operating system version, and app version</li>
+              <li>
+                Product analytics events (for example screen views, button taps,
+                onboarding progression, and subscription funnel steps) collected
+                through PostHog and linked to your account so we can measure
+                retention and improve the product
+              </li>
               <li>App Store transaction information handled through RevenueCat</li>
             </ul>
+            <p>
+              We do not collect crash reports or stack traces, and we do not
+              send your growth data — height measurements, sleep durations,
+              habit check-in content — to analytics providers. Only the fact
+              that an event occurred (for example
+              <code>habit_checkin_completed</code> together with the habit type)
+              is captured.
+            </p>
 
             <h3>2.3 Information we do not collect</h3>
             <ul>
@@ -102,6 +114,13 @@
             <ul>
               <li><strong>Supabase:</strong> secure cloud database for account and growth data storage, with row-level security</li>
               <li><strong>RevenueCat:</strong> subscription management and payment processing</li>
+              <li>
+                <strong>PostHog:</strong> first-party product analytics — receives
+                your user ID, app version, platform, device model, and product
+                interaction events. Analytics data is used only by us to improve
+                the app; it is not shared with advertising networks or data
+                brokers and is not used for cross-app tracking.
+              </li>
               <li><strong>App Store and Google Play:</strong> distribution and billing</li>
             </ul>
 
